@@ -1,0 +1,22 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px; /* Space between the items */
+    padding: 16px; /* Padding around the gallery */
+}
+
+.gallery-item {
+    overflow: hidden; /* Hide overflow */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.gallery-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Keep aspect ratio */
+    display: block; /* Remove bottom space */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
